@@ -10,9 +10,9 @@ public class Model4 {
 	private String studentName;
 	private String departmentName;
 	private String mailid;
+	
 	public Model4() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Model4(int id, String studentName, String departmentName, String mailid) {
 		super();
@@ -45,5 +45,6 @@ public class Model4 {
 	public void setMailid(String mailid) {
 		this.mailid = mailid;
 	}
+
 	
 }
