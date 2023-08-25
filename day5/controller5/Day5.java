@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sunil.RestapiD.day5.model5.Book5;
@@ -17,7 +16,6 @@ import com.sunil.RestapiD.day5.service5.UserService5;
 
 
 @RestController
-@RequestMapping("/api/v1/user")
 public class Day5 {
 	@Autowired
 	UserService5 user;
