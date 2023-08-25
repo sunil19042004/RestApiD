@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,8 +32,8 @@ public class Day4 {
 	public Model4 changeinfo(@RequestBody Model4 s) {
 		return sser.changeinfo(s);
 	}
-	@DeleteMapping("/delete")
-	public void delete() {
-		sser.delete();
+	@DeleteMapping("/delete/{id}")
+	public void delete(@PathVariable int id) {
+		sser.delete(id);
 	}
 }
