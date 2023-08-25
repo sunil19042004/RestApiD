@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.sunil.RestapiD.day4.model4.Model4;
 import com.sunil.RestapiD.day4.repository4.Repository4;
@@ -23,7 +24,7 @@ public class UserService4{
 	public Model4 changeinfo(Model4 s) {
 		return sr.saveAndFlush(s);
 	}
-	public void delete() {
-		sr.deleteAll();
+	public void delete(@RequestBody int id) {
+		sr.deleteById(id);
 	}
 }
