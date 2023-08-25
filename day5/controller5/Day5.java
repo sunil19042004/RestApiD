@@ -34,7 +34,7 @@ public class Day5 {
 		return user.changeinfo(s);
 	}
 	@DeleteMapping("/delete/{id}")
-	public void delete() {
-		user.delete();
+	public void delete(@PathVariable int id) {
+		user.delete(id);
 	}
 }
