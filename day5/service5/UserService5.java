@@ -3,6 +3,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.sunil.RestapiD.day5.model5.Book5;
 import com.sunil.RestapiD.day5.repository5.Repository5;
@@ -21,5 +22,9 @@ public class UserService5{
 	}
 	public void delete() {
 		sr.deleteAll();
+	}
+	public void delete(@RequestBody int id) {
+		// TODO Auto-generated method stub
+		sr.deleteById(id);
 	}
 }
